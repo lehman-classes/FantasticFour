@@ -22,16 +22,15 @@ public class FantasticFour<E extends SuperHero> {
 			System.out.print(" " + count + " ");
 			count--;
 			countdown(count);
-			System.out.println(" What's left... count = " + count);
 		}
 	}
 
 	public void defend(E hero) throws SuperPowerException {
+		if (hero instanceof HumanTorch) {
+			throw new SuperPowerException("Really!? Torch");
+		}
 		countdown(3);
 		hero.superPower();
-		// if (hero instanceOf HumanTorch) {
-			throw new SuperPowerException("An error happened");
-		// }
 	}
 
 	public void displaySortedHeroes() {

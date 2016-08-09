@@ -38,41 +38,12 @@ public class FantasticFourDemo {
 		try {
 			fantasticFour.defend(reed);
 			fantasticFour.defend(susan);
+			fantasticFour.defend(johnny);
 		} catch(SuperPowerException spe) {
 			System.out.println(spe.getMessage());
 		}
 
 		fantasticFour.saveHeroesToFile("heroes.txt");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	}
 }
